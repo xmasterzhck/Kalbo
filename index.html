@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Game Payout Dashboard</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="toast" class="toast"></div>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<div class="logo">GAME PANEL</div>
+
+<div class="navlinks">
+<span>Charts</span>
+<span>Marketplace</span>
+<span>Create</span>
+<span>Currency</span>
+</div>
+
+<input class="search" placeholder="Search">
+
+<div class="user">
+
+<div class="robux">
+
+<div class="robux-icon">
+<div class="robux-hole"></div>
+</div>
+
+<span id="balance">3241096</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="container">
+
+<div class="popup">
+
+<h3>Send Group Payout</h3>
+
+<div class="suggestion-wrapper">
+
+<input id="username" placeholder="Search player username" autocomplete="off">
+
+<div id="suggestions" class="suggestions"></div>
+
+</div>
+
+<input id="amount" type="number" placeholder="Amount">
+
+<button class="send" onclick="sendPayout()">Send</button>
+<button class="cancel" onclick="clearFields()">Cancel</button>
+
+</div>
+
+</div>
+
+
+<!-- LOADING -->
+
+<div id="loading" class="loading-screen">
+Sending currency...
+</div>
+
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<a href="#">Parents</a>
+<a href="#">Gift Cards</a>
+<a href="#">Help</a>
+<a href="#">Terms</a>
+<a href="#">Accessibility</a>
+<a href="#">Privacy</a>
+
+<br><br>
+
+©2026 Game Platform
+
+</div>
+
+
+<script src="js/searchUsers.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
